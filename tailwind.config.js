@@ -9,8 +9,23 @@ module.exports = {
     colors: {
       primary: colors.cyan,
       secondary: colors.emerald,
+      textPrimary: colors.white,
+      textSecondary: colors.gray,
+      background: colors.gray,
+      ...colors,
     },
-    extend: {},
+    fontFamily: {
+      sans: ["Poppins", "sans-serif"],
+    },
+    extend: {
+      // spacing: {
+      //   '128': '32rem',
+      //   '144': '36rem',
+      // },
+      borderRadius: {
+        my: "2rem",
+      },
+    },
   },
   plugins: [],
 };

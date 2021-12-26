@@ -4,6 +4,7 @@ import Head from "next/head";
 import "@fontsource/poppins";
 
 import defaultSeoConfig from "../../next-seo.config";
+import Layout from "components/layout";
 import "styles/globals.css";
 
 function MyApp({ Component, pageProps }: AppProps) {
@@ -16,9 +17,9 @@ function MyApp({ Component, pageProps }: AppProps) {
         />
       </Head>
       <DefaultSeo {...defaultSeoConfig} />
-      {/* <Layout> */}
-      <Component {...pageProps} />
-      {/* </Layout> */}
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
     </>
   );
 }
