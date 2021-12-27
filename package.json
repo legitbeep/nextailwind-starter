@@ -50,6 +50,8 @@
   "lint-staged": {
     "*.{js,jsx}": [
       "eslint --fix",
+      "npm run lint:fix",
+      "npx commitlint --edit $1",
       "git add"
     ]
   }
