@@ -6,9 +6,11 @@ const defaultSEOConfig = {
   description: "Next.js + Tailwind-CSS + TypeScript template",
   canonical: "",
   openGraph: {
+    type: "website",
     url: "",
     title: "nextailwind-starter",
     description: "Next.js + tailwind-css + TypeScript template",
+    site_name: "nextailwind-starter",
     images: [
       // {
       //   url:

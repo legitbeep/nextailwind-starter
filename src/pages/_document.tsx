@@ -51,7 +51,7 @@ class MyDocument extends Document {
             />
             <link rel="shortcut icon" href="/app-icon.png" /> */}
 
-          <link rel="manifest" href="/manifest.json" />
+          {/* <link rel="manifest" href="/manifest.json" /> */}
         </Head>
         <body>
           <Main />

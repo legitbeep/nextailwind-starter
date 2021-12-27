@@ -18,6 +18,10 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "baseUrl": "src",
+    "paths": {
+      "@/pages/*": ["src/pages/*"],
+      "@/styles/*": ["src/styles/*"]
+    },
     "incremental": true
   },
   "include": [
