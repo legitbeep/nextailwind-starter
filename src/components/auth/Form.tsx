@@ -18,7 +18,6 @@ const Form = () => {
     // }
     signIn();
   };
-
   if (session)
     return (
       <div className="my-4 flex items-center flex-col">
@@ -46,7 +45,7 @@ const Form = () => {
         onChange={(e) => setPassword(e.target.value)}
       /> */}
       <button type="submit" className="button my-2">
-        Login
+        Login with Github
       </button>
     </form>
   );
