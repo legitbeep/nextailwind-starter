@@ -3,5 +3,11 @@
 @tailwind utilities;
 
 .button {
-  @apply rounded-lg bg-primary-500 hover:bg-primary-700 text-white font-bold text-base;
+  @apply bg-primary-500 hover:bg-primary-700 text-white dark:text-white font-bold p-3 rounded-xl shadow-lg shadow-primary-600/30;
+}
+body {
+  @apply dark:bg-background-900 bg-white;
+}
+input {
+  @apply shadow dark:bg-background-800 my-2 appearance-none border rounded-xl w-full py-3 px-4 text-gray-700 leading-tight;
 }
