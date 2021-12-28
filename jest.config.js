@@ -7,6 +7,7 @@ module.exports = {
   moduleNameMapper: {
     "^pages/(.*)$": ["<rootDir>/src/pages/$1"],
     "^styles/(.*)$": ["<rootDir>/src/styles/$1"],
+    "^components/(.*)$": ["<rootDir>/src/components/$1"],
 
     /* Handle CSS imports (with CSS modules)
         https://jestjs.io/docs/webpack#mocking-css-modules */
