@@ -1,11 +1,10 @@
 import Head from "next/head";
-
+import Router from "next/router";
+import type { AppProps } from "next/app";
+import { SessionProvider } from "next-auth/react";
 import defaultSeoConfig from "../../next-seo.config";
 import Layout from "components/layout";
 import "styles/globals.css";
-
-import Router from "next/router";
-import type { AppProps } from "next/app";
 
 import { ThemeProvider } from "next-themes";
 import { DefaultSeo } from "next-seo";
@@ -34,9 +33,11 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
       </Head>
       <ThemeProvider defaultTheme="system" attribute="class">
         <DefaultSeo {...defaultSeoConfig} />
-        <Layout>
-          <Component {...pageProps} />
-        </Layout>
+        <SessionProvider>
+          <Layout>
+            <Component {...pageProps} />
+          </Layout>
+        </SessionProvider>
       </ThemeProvider>
     </>
   );

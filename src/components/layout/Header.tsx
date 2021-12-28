@@ -8,7 +8,6 @@ const Header = () => {
   useEffect(() => {
     setTheme(localStorage.getItem("theme") || "dark");
   }, []);
-  console.log(resolvedTheme === "light");
   return (
     <header className="flex justify-between items-center py-3">
       <h2 className="text-2xl font-bold underline">nextailwind-starter</h2>
