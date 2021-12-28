@@ -8,8 +8,8 @@ module.exports = {
   content: [],
   theme: {
     colors: {
-      primary: colors.cyan,
-      secondary: colors.emerald,
+      primary: colors.purple,
+      secondary: colors.indigo,
       textPrimary: colors.white,
       textSecondary: colors.gray,
       background: colors.gray,

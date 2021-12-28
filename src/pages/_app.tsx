@@ -10,6 +10,7 @@ import type { AppProps } from "next/app";
 import { ThemeProvider } from "next-themes";
 import { DefaultSeo } from "next-seo";
 import NProgress from "nprogress";
+import "@fontsource/poppins";
 
 import "nprogress/nprogress.css";
 
